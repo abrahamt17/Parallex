@@ -1,0 +1,343 @@
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                
+                .page1 {
+                    background: url(assets/Bgs/bg.jpg) no-repeat;
+                    background-size: cover;
+                    margin-top: -11rem;
+                    height: 53rem;
+                }
+                
+                .parallex {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .text1 {
+                    position: absolute;
+                    font-size: 5em;
+                    color: rgb(255, 255, 255);
+                    top: 22rem;
+                    left: 15rem;
+                    z-index: -1;
+                    overflow: hidden;
+                    animation: bottom linear;
+                    animation-timeline: scroll();
+                    animation: typing 2s steps(15), cursor .4s step-end infinite alternate;
+                }
+                
+                @keyframes typing {
+                    from {
+                        width: 0;
+                    }
+                }
+                
+                @keyframes cursor {
+                    50% {
+                        border-color: transparent;
+                    }
+                }
+                
+                .text1.active {
+                    z-index: 0;
+                }
+                /* .text12.active {
+                    animation: textfade linear;
+                    animation-timeline: view();
+                }
+                
+                @keyframes textfade {
+                    from {
+                        opacity: 0;
+                    }
+                    to {
+                        opacity: 2;
+                    }
+                } */
+                
+                .mountains {
+                    display: flex;
+                    height: 30rem;
+                    margin-top: 23rem;
+                    position: absolute;
+                    width: 76.6rem;
+                    transform: top;
+                }
+                
+                .mountains.width {
+                    animation: fadein linear forwards;
+                    animation-timeline: scroll();
+                    animation-range: exit;
+                }
+                
+                .mountains2 {
+                    display: flex;
+                    position: absolute;
+                    transform: top;
+                    width: 95rem;
+                    height: 9rem;
+                    margin-top: 0rem;
+                    animation: fadein linear forwards;
+                    animation-timeline: scroll();
+                    animation-range: exit;
+                }
+                
+                @keyframes bottom {
+                    0% {
+                        transform: translateY(0px);
+                    }
+                    25% {
+                        transform: translateY(500px);
+                    }
+                    100% {
+                        transform: translateY(800px);
+                    }
+                }
+                
+                @keyframes rotate {
+                    50% {
+                        transform: rotate(45deg);
+                    }
+                }
+                
+                @keyframes fadein {
+                    0% {
+                        opacity: 1;
+                        scale: 1;
+                    }
+                    10% {
+                        opacity: 0.8;
+                    }
+                    25% {
+                        opacity: 0.6;
+                        scale: 2.2;
+                    }
+                    50% {
+                        opacity: 0;
+                        scale: 2.7;
+                    }
+                    100% {
+                        opacity: 0;
+                        scale: 3;
+                    }
+                }
+                
+                .vectors {
+                    position: absolute;
+                    top: 3rem;
+                }
+                
+                .men {
+                    position: absolute;
+                    width: 110%;
+                    margin-left: 62rem;
+                    margin-top: 15rem;
+                    z-index: 1;
+                    animation: bottom 2s linear;
+                    animation-timeline: scroll();
+                }
+                
+                .women {
+                    position: relative;
+                    left: 4rem;
+                    top: 16rem;
+                    z-index: 1;
+                    animation: bottom linear;
+                    ;
+                    animation-timeline: scroll();
+                    animation-range: exit;
+                }
+                
+                .moon {
+                    position: absolute;
+                    margin-top: 2rem;
+                    margin-left: 17rem;
+                    z-index: 0;
+                    margin-top: 29rem;
+                }
+                
+                .moon1 {
+                    height: 10rem;
+                    position: absolute;
+                    margin-left: 41rem;
+                    margin-top: 10rem;
+                }
+                
+                .scroll {
+                    position: absolute;
+                }
+                /* linear-gradient(70deg, #78a2eb, #ffb5ea, #cfcbd2, #cb98ed); */
+                /* page2 */
+                
+                .page2 {
+                    background-image: url(assets/Bgs/bg.jpg);
+                    background-size: cover;
+                    height: 59rem;
+                    background-position: unset;
+                    /* background: radial-gradient(circle, #1bcedf -65%, #5b247a 95%); */
+                    background-size: cover;
+                    height: 42rem;
+                    z-index: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .page3 {
+                    background-image: url(assets/Bgs/bg.jpg);
+                    background-size: cover;
+                    height: 59rem;
+                    background-position: unset;
+                    /* background: radial-gradient(circle, #1bcedf -65%, #5b247a 95%); */
+                    background-size: cover;
+                    height: 42rem;
+                    z-index: 0;
+                }
+                
+                .text2 {
+                    position: absolute;
+                    font-size: 5em;
+                    color: rgb(243, 243, 242);
+                    left: 15rem;
+                    font-family: cursive;
+                }
+                
+                .scroll {
+                    border: none;
+                    border-radius: 19px;
+                    width: 5rem;
+                    height: 2rem;
+                    position: scroll;
+                    z-index: 1;
+                    left: 34rem;
+                    top: 20rem;
+                    box-shadow: 0px -1px 8px 0 rgb(250, 248, 248), 1px -2px 30px 5px rgba(255, 255, 255, 0.856);
+                }
+                
+                .moon2 {
+                    height: 10rem;
+                    position: absolute;
+                    margin-left: 41rem;
+                    margin-top: 10rem;
+                }
+                
+                .glasses {
+                    display: flex;
+                    justify-content: center;
+                    align-items: cente
+                }
+                
+                .glass {
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(20px);
+                    background: linear-gradient(125deg, rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+                    border: 1px solid rgba(255, 255, 255, 0.18);
+                    border-radius: 20px;
+                    box-shadow: 0px 8px 12px 0px, rgb(0, 0, 0, 0.32);
+                    height: 116rem;
+                    width: 29rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 18rem;
+                    width: 30rem;
+                    margin: 27rem 0rem 4rem 48rem;
+                }
+                
+                .glass.one {
+                    left: -25rem;
+                    margin: 27rem 0rem 4rem 32rem;
+                }
+                
+                .glass h1 {
+                    position: absolute;
+                    font-size: 2em;
+                    color: rgb(255, 255, 255);
+                    z-index: 1;
+                    top: 1rem;
+                    font-weight: bold;
+                    line-break: 1;
+                    transition: all 1s;
+                }
+                
+                .parallex3 {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .glass p {
+                    position: absolute;
+                    font-size: 1em;
+                    color: rgb(146, 142, 142);
+                    top: 4rem;
+                    line-break: 1;
+                }
+                
+                .glass3 {
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(20px);
+                    background: linear-gradient(125deg, rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+                    border: 1px solid rgba(255, 255, 255, 0.18);
+                    border-radius: 20px;
+                    box-shadow: 0px 8px 12px 0px, rgb(0, 0, 0, 0.32);
+                    height: 100rem;
+                    width: 29rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    width: 30rem;
+                    /* margin: 27rem 0rem 4rem 32rem; */
+                }
+                
+                .glass3.one {
+                    left: -25rem;
+                    /* margin: 27rem 0rem 4rem 32rem; */
+                }
+                
+                .glass3 h1 {
+                    position: absolute;
+                    font-size: 2em;
+                    color: rgb(255, 255, 255);
+                    z-index: 1;
+                    /* top: 1rem; */
+                    font-weight: bold;
+                    line-break: 1;
+                    transition: all 1s;
+                }
+                
+                .glass3 p {
+                    position: absolute;
+                    font-size: 1em;
+                    color: rgb(146, 142, 142);
+                    /* top: 4rem; */
+                    line-break: 1;
+                }
+                
+                .hidden {
+                    opacity: 0;
+                    transition: all 1s;
+                    filter: blur(5px);
+                    transform: translateX(-100%);
+                }
+                
+                .show {
+                    opacity: 1;
+                    filter: blur(0);
+                    transform: translateX();
+                }
+                
+                @media(prefer-reduced-motion) {
+                    .hidden {
+                        transition: none;
+                    }
+                }
